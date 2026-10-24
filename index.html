@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta
+      name="description"
+      content="Nourish by Siessima : diététicienne-nutritionniste. Bilan nutritionnel, suivi personnalisé, recettes et conseils."
+    />
+    <link rel="icon" href="images/logo.webp" type="image/webp" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+    <meta name="theme-color" content="#fff3f6" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#2a0f1d" media="(prefers-color-scheme: dark)" />
+    <!-- Aperçu quand on partage le lien (WhatsApp, Instagram, Facebook…).
+         Une fois en ligne, remplace "images/og.jpg" par l'adresse complète, ex. https://nourish.vercel.app/images/og.jpg -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:title" content="Nourish by Siessima | Diététicienne-nutritionniste" />
+    <meta
+      property="og:description"
+      content="Un accompagnement bienveillant, sans régime strict : bilan nutritionnel, suivi personnalisé, recettes et conseils."
+    />
+    <meta property="og:image" content="images/og.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Nourish by Siessima | Diététicienne</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Dietitian",
+        "name": "Nourish by Siessima",
+        "description": "Diététicienne-nutritionniste : bilan nutritionnel, suivi personnalisé, rééquilibrage alimentaire, consultations en ligne.",
+        "telephone": "+905010497304",
+        "image": "images/og.jpg",
+        "sameAs": [
+          "https://www.instagram.com/nourish_by_siessima/"
+        ]
+      }
+    </script>
+    <script src="js/theme.js?v=5"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=DM+Sans:wght@400;500;700&family=Caveat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css?v=5" />
+  </head>
+  <body>
+    <div id="petals" aria-hidden="true"></div>
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <symbol id="f" viewBox="-50 -50 100 100">
+        <g fill="currentColor">
+          <ellipse cx="0" cy="-23" rx="14" ry="23" />
+          <ellipse cx="0" cy="-23" rx="14" ry="23" transform="rotate(72)" />
+          <ellipse cx="0" cy="-23" rx="14" ry="23" transform="rotate(144)" />
+          <ellipse cx="0" cy="-23" rx="14" ry="23" transform="rotate(216)" />
+          <ellipse cx="0" cy="-23" rx="14" ry="23" transform="rotate(288)" />
+        </g>
+        <circle r="9" fill="var(--center)" />
+      </symbol>
+    </svg>
+
+    <nav>
+      <a class="logo" href="#hero"
+        ><span class="ph lg" data-logo></span
+        ><span class="lt"><b data-c="name"></b><i data-c="by"></i></span
+      ></a>
+      <ul>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#bibliotheque">Bibliothèque</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button
+        class="mode"
+        id="mode"
+        role="switch"
+        aria-checked="false"
+        aria-label="Mode nuit"
+      >
+        <span class="knob"></span>
+      </button>
+    </nav>
+
+    <header id="hero">
+      <div class="pol a"><div class="ph" data-ph="1"></div></div>
+      <div class="pol b"><div class="ph" data-ph="2"></div></div>
+      <div style="position: relative; z-index: 2">
+        <span class="ph hl" data-logo></span>
+        <h1><span class="nm" data-c="name"></span><em data-c="by"></em></h1>
+        <p data-c="tagline"></p>
+        <a class="btn" href="#contact">Prendre rendez-vous</a>
+        <p class="hint">Touchez l'écran pour faire pousser des fleurs</p>
+      </div>
+    </header>
+
+    <section id="about">
+      <h2 style="grid-column: 1/-1; margin: 0">À propos</h2>
+      <div class="about" style="grid-column: 1/-1">
+        <div class="ph portrait" data-ph="0"></div>
+        <div>
+          <div id="aboutText"></div>
+          <div class="tags" id="tags"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>Services</h2>
+      <ul class="svc" id="svc"></ul>
+      <p style="color: var(--soft); font-size: 0.95rem; margin-top: 1.5rem">
+        Une situation médicale particulière ? Le suivi se fait en lien avec
+        votre médecin.
+      </p>
+    </section>
+
+    <section id="galerie">
+      <h2>Galerie</h2>
+      <div class="gal">
+        <div class="ph" data-ph="3"></div>
+        <div class="ph" data-ph="4"></div>
+        <div class="ph" data-ph="5"></div>
+        <div class="ph" data-ph="6"></div>
+        <div class="ph" data-ph="7"></div>
+        <div class="ph" data-ph="8"></div>
+        <div class="ph" data-ph="9"></div>
+      </div>
+    </section>
+
+    <section id="videos">
+      <h2>En vidéo</h2>
+      <p
+        style="
+          color: var(--soft);
+          max-width: 55ch;
+          margin-top: -0.8rem;
+          margin-bottom: 1.5rem;
+        "
+      >
+        Un peu de mon quotidien : recettes, coulisses et petites habitudes.
+      </p>
+      <div class="vids" id="vids"></div>
+    </section>
+
+    <section id="bibliotheque">
+      <h2>Bibliothèque</h2>
+      <p
+        style="
+          color: var(--soft);
+          max-width: 55ch;
+          margin-top: -0.8rem;
+          margin-bottom: 2rem;
+        "
+      >
+        Ouvre un dossier pour découvrir recettes, guides et fiches conseils.
+      </p>
+      <div class="lib" id="lib"></div>
+    </section>
+
+    <section id="livre">
+      <h2>Laisser une trace</h2>
+      <p
+        style="
+          color: var(--soft);
+          max-width: 55ch;
+          margin-top: -0.8rem;
+          margin-bottom: 1.5rem;
+        "
+      >
+        Dessine sur le tableau ou colle un petit mot. Les post-it se déplacent
+        du doigt.
+      </p>
+      <div class="tools" role="toolbar" aria-label="Outils de dessin">
+        <span id="sws" style="display: flex; gap: 0.5rem"></span>
+        <button class="tb" id="eraser" aria-pressed="false">Gomme</button>
+        <button class="tb" id="clear">Tout effacer</button>
+      </div>
+      <div class="board" id="board">
+        <canvas id="cv" aria-label="Tableau de dessin"></canvas>
+      </div>
+      <form class="nf" id="nf">
+        <input
+          id="nt"
+          maxlength="90"
+          placeholder="Écris un petit mot…"
+          aria-label="Petit mot"
+        /><button class="btn" type="submit">Coller le post-it</button>
+      </form>
+    </section>
+
+    <section id="contact">
+      <p class="eyebrow">
+        prenons contact <svg><use href="#f" /></svg>
+      </p>
+      <h2>Me contacter</h2>
+      <div class="ccard">
+        <p data-c="contactText" style="margin: 0; color: var(--ink)"></p>
+        <form class="cf" id="cf">
+          <label
+            >Votre prénom<input id="cn" placeholder="Sophie" required
+          /></label>
+          <label
+            >Votre e-mail<input
+              id="ce"
+              type="email"
+              placeholder="sophie@exemple.fr"
+              required
+          /></label>
+          <label
+            >Votre message<textarea
+              id="cm"
+              rows="4"
+              placeholder="Bonjour, je souhaiterais…"
+              required
+            ></textarea>
+          </label>
+          <input
+            type="text"
+            id="hp"
+            tabindex="-1"
+            autocomplete="off"
+            aria-hidden="true"
+            style="position: absolute; left: -9999px"
+          />
+          <button class="btn" type="submit">Envoyer mon message ✉️</button>
+          <p class="fs" id="fs" role="status" aria-live="polite"></p>
+        </form>
+        <a class="mail" id="mail" href="#"></a>
+        <p class="meta" id="meta"></p>
+        <p class="meta" id="hours"></p>
+        <div class="links" id="links" style="margin-top: 1.2rem"></div>
+      </div>
+    </section>
+
+    <footer>
+      <span
+        class="ph lg"
+        data-logo
+        style="width: 46px; height: 46px; margin: 0 auto 0.6rem"
+      ></span
+      >© <span id="yr"></span> <span data-c="brand"></span>
+    </footer>
+
+    <dialog id="dlg">
+      <div class="bar">
+        <span id="dTitle"></span
+        ><button aria-label="Fermer" id="dClose">✕</button>
+      </div>
+      <ul id="dList"></ul>
+    </dialog>
+
+    <script src="js/config.js?v=5"></script>
+    <script src="js/main.js?v=5"></script>
+  </body>
+</html>

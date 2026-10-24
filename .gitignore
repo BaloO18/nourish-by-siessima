@@ -1,0 +1,12 @@
+# Système et éditeurs
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Vercel
+.vercel/
+
+# Archives
+*.zip
